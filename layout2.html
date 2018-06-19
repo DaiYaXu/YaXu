@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <title>layout0607</title>
+    <style>
+        /*global************************* CSS RESET. 每次都要的東西可以先打好**************************/
+        * {
+            box-sizing: border-box;
+            font-family: "Roboto", "微軟正黑體", sans-serif;
+        }
+        body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+            margin: 0;
+            padding: 0;
+            height: 2500px;
+        }
+        img {
+            width: 100%;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /*nav**********************************************************/
+        nav {
+            width: 100%;
+            height: 75px;
+            background-color: black;
+            position: fixed;
+        }
+        nav .wrapper {
+            width: 1500px;
+            margin: auto;
+        }
+        nav .logo {
+            float: left;
+            padding-right: 150px;
+            padding-left: 150px;
+        }
+        nav .logo a {
+            text-decoration: none;
+            line-height: 75px;
+            color: white;
+            font-size: 2rem;
+        }
+        nav .menu li {
+            float: left;
+            list-style: none;
+        }
+        nav .menu a {
+            display: block;
+            text-decoration: none;
+            line-height: 75px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: white;
+        }
+        nav .menu a:hover {
+            color: black;
+            background-color: lightgray;
+        }
+        /*header**********************************************************/
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../image/asus003.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#">ASUS</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">產品</a></li>
+                    <li><a href="#">熱門活動</a></li>
+                    <li><a href="#">商用電腦</a></li>
+                    <li><a href="#">服務 & 社群</a></li>
+                    <li><a href="#">商店</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header></header>
+</body>
+</html>

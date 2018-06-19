@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;Form&gt;</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <p>
+            <label>帳號：
+                <input type="text" name="username">
+            </label>
+        </p>
+        <p>
+            <label>密碼：
+                <input type="password" name="password">
+            </label>
+        </p>
+        <p>
+            <input type="submit" name="logIn" value="登入">
+            <input type="reset" name="reset" value="重置">
+            <input type="radio" name="gender" value="male">男
+            <input type="radio" name="gender" value="female">女
+        </p>
+        <p>
+            <input type="checkbox" name="interest" value="Jog">慢跑
+            <input type="checkbox" name="interest" value="Hike">登山
+            <input type="checkbox" name="interest" value="Swim">游泳
+            <input type="checkbox" name="interest" value="Eat">吃
+        </p>
+        <p>
+            <input type="hidden" name="hidden" value="UCantCMe">
+        </p>
+        <select id="season" name="season" multiple size="3">
+            <option value="1" name="spring">春天 </option>
+            <option value="2" name="summer" selected>夏天 </option>
+            <option value="3" name="autumn">秋天 </option>
+            <option value="4" name="winter">冬天 </option>
+        </select>
+        <p>
+            <input type="button" name="button" value="press me">
+        </p>
+    </form>
+</body>
+
+</html>
